@@ -48,9 +48,10 @@ class Example(QMainWindow):
         btn1.move(410, 70)
         btn1.clicked.connect(self.buttonClicked)
 
-        self.phonetics_speak = QPushButton('Speak', self)
+        self.phonetics_speak = QPushButton('', self)
         self.phonetics_speak.move(190,183)
         self.phonetics_speak.clicked.connect(self.start_speaking)
+        self.phonetics_speak.setIcon(QIcon('volume.png'))
 
 
         self.searchtext = QLineEdit(self)
